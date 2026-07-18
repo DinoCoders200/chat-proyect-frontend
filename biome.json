@@ -43,7 +43,7 @@
       },
       "correctness": {
         "noUnusedFunctionParameters": "off",
-        "noUnusedVariables": "warn"
+        "noUnusedVariables": "error"
       }
     }
   },
