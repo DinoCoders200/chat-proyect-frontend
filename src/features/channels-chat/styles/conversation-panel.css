@@ -1,0 +1,187 @@
+@reference "../../../index.css";
+
+/* =======================================================
+   PANEL
+======================================================= */
+
+.conversation-panel {
+  @apply flex h-full min-h-0 flex-col bg-background;
+}
+
+.conversation-panel__body {
+  @apply flex-1 min-h-0 overflow-y-auto px-6 py-5;
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.conversation-header {
+  @apply flex h-[72px] items-center justify-between
+         border-b border-border
+         bg-background
+         px-6;
+}
+
+.conversation-header__left {
+  @apply flex items-center gap-3;
+}
+
+.conversation-header__left svg {
+  @apply text-primary;
+}
+
+.conversation-header__left h2 {
+  @apply text-lg font-semibold;
+}
+
+.conversation-header__left p {
+  @apply text-sm text-muted-foreground;
+}
+
+.conversation-header__right {
+  @apply flex items-center gap-2;
+}
+
+.conversation-header__right button {
+  @apply flex h-10 w-10 items-center justify-center
+         rounded-lg
+         text-muted-foreground
+         transition-colors
+         hover:bg-accent
+         hover:text-accent-foreground;
+}
+
+/* =======================================================
+   SEARCH
+======================================================= */
+
+.conversation-header__search {
+  @apply ml-3 flex items-center gap-2
+         rounded-lg
+         border border-border
+         bg-card
+         px-3
+         py-2;
+}
+
+.conversation-header__search input {
+  @apply w-52 bg-transparent
+         text-sm
+         outline-none
+         placeholder:text-muted-foreground;
+}
+
+.conversation-header__search svg {
+  @apply text-muted-foreground;
+}
+
+/* =======================================================
+   MENSAJES
+======================================================= */
+
+.conversation-panel__message {
+  @apply mb-8 flex gap-4;
+}
+
+.conversation-panel__avatar {
+  @apply h-12 w-12 rounded-full
+         border-2 border-primary
+         object-cover
+         shrink-0;
+}
+
+.conversation-panel__avatar--initials {
+  @apply flex items-center justify-center
+         bg-secondary
+         font-semibold
+         text-secondary-foreground;
+}
+
+.conversation-panel__content {
+  @apply flex-1;
+}
+
+.conversation-panel__meta {
+  @apply mb-2 flex items-center gap-3;
+}
+
+.conversation-panel__meta strong {
+  @apply text-base text-primary;
+}
+
+.conversation-panel__meta span {
+  @apply text-xs text-muted-foreground;
+}
+
+.conversation-panel__content p {
+  @apply leading-7 text-foreground;
+}
+
+/* =======================================================
+   ADJUNTO
+======================================================= */
+
+.conversation-panel__attachment {
+  @apply mt-4 w-full max-w-xl
+         rounded-xl
+         border border-border
+         object-cover;
+}
+
+/* =======================================================
+   DIVISOR
+======================================================= */
+
+.conversation-panel__divider {
+  @apply relative my-10 text-center
+         text-sm font-medium text-destructive;
+}
+
+.conversation-panel__divider::before {
+  content: "";
+  @apply absolute left-0 top-1/2 h-px w-[42%] bg-border;
+}
+
+.conversation-panel__divider::after {
+  content: "";
+  @apply absolute right-0 top-1/2 h-px w-[42%] bg-border;
+}
+
+/* =======================================================
+   INPUT
+======================================================= */
+
+.message-input {
+  @apply flex items-center gap-4
+         border-t border-border
+         bg-background
+         px-6
+         py-[0.9rem];
+}
+
+.message-input button {
+  @apply flex h-10 w-10 items-center justify-center
+         rounded-lg
+         text-muted-foreground
+         transition-colors
+         hover:bg-accent
+         hover:text-accent-foreground;
+}
+
+.message-input input {
+  @apply flex-1 rounded-xl
+         border border-border
+         bg-card
+         px-4 py-3
+         outline-none
+         placeholder:text-muted-foreground;
+}
+
+.message-input__actions {
+  @apply flex items-center gap-2;
+}
+
+.message-input__actions button {
+  @apply h-10 w-10 rounded-lg;
+}

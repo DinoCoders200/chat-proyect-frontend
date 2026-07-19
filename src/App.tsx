@@ -1,9 +1,7 @@
+import { ChannelsChatPage } from '@/features/channels-chat/channels-chat-page';
+
 function App() {
-  return (
-    <div className="flex h-screen w-screen items-center justify-center bg-background text-primary font-sans antialiased">
-      <h1 className="text-4xl font-bold tracking-wide">Chat Project Frontend</h1>
-    </div>
-  );
+  return <ChannelsChatPage />;
 }
 
 export default App;
