@@ -3,7 +3,7 @@
 A professional, scalable frontend architecture for a Discord Clone built with React 19, TypeScript 6, and Vite.
 
 - **🟢 Production (Main):** [https://chat-proyect-frontend.vercel.app/](https://chat-proyect-frontend.vercel.app/)
-- **🚧 Development (Dev):** [chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app](chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app)
+- **🚧 Development (Dev):** [https://chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app](https://chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app)
 
 ## Tech Stack
 
