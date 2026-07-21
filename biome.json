@@ -31,7 +31,7 @@
       "preset": "recommended",
       "style": {
         "noNonNullAssertion": "off",
-        "useImportType": "off"
+        "useImportType": "error"
       },
       "suspicious": {
         "recommended": true,
@@ -42,7 +42,7 @@
         "useLiteralKeys": "off"
       },
       "correctness": {
-        "noUnusedFunctionParameters": "off",
+        "noUnusedFunctionParameters": "error",
         "noUnusedVariables": "error"
       }
     }
