@@ -2,7 +2,11 @@
 
 A professional, scalable frontend architecture for a Discord Clone built with React 19, TypeScript 6, and Vite.
 
+- **🟢 Production (Main):** [https://chat-proyect-frontend.vercel.app/](https://chat-proyect-frontend.vercel.app/)
+- **🚧 Development (Dev):** [chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app](chat-proyect-frontend-git-dev-ignaccio7s-projects.vercel.app)
+
 ## Tech Stack
+
 - **Core**: React 19 + TypeScript + Vite.
 - **Styling**: Tailwind CSS v4 + shadcn/ui.
 - **State Management**: Zustand (Global client state).
@@ -15,9 +19,10 @@ A professional, scalable frontend architecture for a Discord Clone built with Re
 
 ## Directory Structure
 
-This project implements a **Feature-Based Modular Architecture** to ensure clean boundaries, avoiding messy imports and circular dependencies. 
+This project implements a **Feature-Based Modular Architecture** to ensure clean boundaries, avoiding messy imports and circular dependencies.
 
 ### Coding Conventions:
+
 - **File Naming**: All files and directories must be named using **kebab-case** (e.g., `api-client.ts`, `login-form.tsx`, `scroll-area.tsx`).
 - **No Barrel Files**: We explicitly avoid barrel files (`index.ts`) to promote explicit dependencies and better tree-shaking.
 
@@ -49,28 +54,37 @@ src/
 ## Development Setup
 
 ### Prerequisites
+
 Make sure you have **Node.js** and **pnpm** installed on your machine.
 
 ### Installation
+
 Clone the repository and install dependencies:
+
 ```bash
 pnpm install
 ```
 
 ### Run Locally
+
 Start the local development server:
+
 ```bash
 pnpm dev
 ```
 
 ### Linting and Formatting
+
 To validate and automatically fix style issues, imports sorting, and linting rules in one go:
+
 ```bash
 pnpm lint
 ```
 
 ### Production Build
+
 Runs linter checks, TypeScript compiler checks, and builds the production bundle:
+
 ```bash
 pnpm build
 ```
@@ -82,9 +96,11 @@ pnpm build
 This project enforces **Conventional Commits**. Any commit message that doesn't follow the convention will be blocked.
 
 ### Format
+
 `type(scope): description` (Scope is optional but highly recommended).
 
 ### Allowed Types
+
 - `feat`: A new feature.
 - `fix`: A bug fix.
 - `docs`: Documentation changes.
