@@ -10,7 +10,7 @@
   },
   "overrides": [
     {
-      "includes": ["**/*.svg", "**/*.css"],
+      "includes": ["**/*.svg", "**/*.css", "src/components/ui/**/*"],
       "linter": {
         "enabled": false
       },
