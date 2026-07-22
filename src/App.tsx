@@ -1,11 +1,7 @@
-import { CallPanel } from '@/features/calls/components/call-panel';
+import { ChannelsChatPage } from '@/features/channels-chat/channels-chat-page';
 
 function App() {
-  return (
-    <div className="flex h-screen w-screen items-center justify-center bg-background text-primary font-sans antialiased">
-      <CallPanel channelId="test-1" channelName="Sala de Estrategia" />
-    </div>
-  );
+  return <ChannelsChatPage />;
 }
 
 export default App;
