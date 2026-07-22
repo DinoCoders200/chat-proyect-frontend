@@ -1,5 +1,5 @@
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { type ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface SidebarGroupProps {
   title: string;

@@ -1,5 +1,6 @@
 import '../styles/conversation-panel.css';
 
+import { CallPanel } from '@/features/calls/components/call-panel';
 import { ConversationHeader } from './conversation-header';
 import { MessageInput } from './message-input';
 
@@ -35,6 +36,10 @@ export function ConversationPanel() {
       <ConversationHeader />
 
       <div className="conversation-panel__body">
+        <div className="mb-6 flex justify-center">
+          <CallPanel channelId="test-1" channelName="Sala de Estrategia" />
+        </div>
+
         {messages.map((message, index) => (
           <article key={message.id} className="conversation-panel__message">
             {message.avatar ? (
