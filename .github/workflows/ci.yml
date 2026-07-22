@@ -1,0 +1,32 @@
+name: CI
+on:
+  push:
+    branches: ["dev", "main"]
+  pull_request:
+    branches: ["dev", "main"]
+    types: [opened, synchronize]
+
+jobs:
+  code-quality:
+    name: Lint, Format and Type Check
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: "1"
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: "11"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run lint and format
+        run: pnpm biome ci .
+      - name: Run type check
+        run: pnpm tsc -b

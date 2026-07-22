@@ -1,0 +1,68 @@
+@reference "../../../index.css";
+
+.server-sidebar {
+  @apply flex h-full flex-col justify-between items-center border-r border-border bg-sidebar py-5;
+}
+
+.server-sidebar__top {
+  @apply flex flex-col items-center gap-5;
+}
+
+.server-sidebar__bottom {
+  @apply flex flex-col items-center gap-4;
+}
+
+.server-sidebar__nav {
+  @apply flex flex-col items-center gap-4;
+}
+
+.server-sidebar__logo {
+  @apply flex h-12 w-12 items-center justify-center rounded-2xl bg-chart-5 font-bold text-primary-foreground transition-opacity hover:opacity-90;
+}
+
+.server-sidebar__active {
+  @apply flex h-12 w-12 items-center justify-center
+         rounded-2xl
+         bg-primary
+         text-primary-foreground
+         shadow-sm;
+         position: relative;
+}
+.server-sidebar__active::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 4px;
+  height: 28px;
+  border-radius: 9999px;
+  background: var(--primary);
+}
+.server-sidebar__icon {
+  @apply flex h-12 w-12 items-center justify-center
+         rounded-full
+         bg-sidebar-border
+         text-sidebar-foreground
+         transition-all
+         duration-200
+         hover:bg-primary
+         hover:text-primary-foreground;
+}
+
+.server-sidebar__bottom-icon {
+  @apply flex h-10 w-10 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground;
+}
+
+.server-sidebar__add {
+  @apply flex h-12 w-12 items-center justify-center
+         rounded-full
+         bg-accent
+         text-secondary
+         transition-all
+         duration-200
+         hover:bg-secondary
+         hover:text-secondary-foreground;
+}
+
+.server-sidebar__divider {
+  @apply my-2 h-px w-8 bg-border;
+}
