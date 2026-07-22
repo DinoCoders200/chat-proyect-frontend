@@ -10,7 +10,7 @@
   },
   "overrides": [
     {
-      "includes": ["**/*.svg", "**/*.css"],
+      "includes": ["**/*.svg", "**/*.css", "src/components/ui/**/*"],
       "linter": {
         "enabled": false
       },
@@ -31,7 +31,7 @@
       "preset": "recommended",
       "style": {
         "noNonNullAssertion": "off",
-        "useImportType": "off"
+        "useImportType": "error"
       },
       "suspicious": {
         "recommended": true,
@@ -42,8 +42,8 @@
         "useLiteralKeys": "off"
       },
       "correctness": {
-        "noUnusedFunctionParameters": "off",
-        "noUnusedVariables": "warn"
+        "noUnusedFunctionParameters": "error",
+        "noUnusedVariables": "error"
       }
     }
   },
